@@ -1,5 +1,5 @@
 export type StateType = {
-    email: string;
+    email: string | '' ;
 }
 
 export type ActionType = {
@@ -13,7 +13,7 @@ const initialState: StateType = {
 
 export default (state = initialState, action: ActionType) => {
 
-    if(action.type == 'SET_EMAIL') {
+    if(action.type === 'SET_EMAIL') {
         return { ...state, email:action.payload.email };
     }
 
