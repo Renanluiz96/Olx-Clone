@@ -1,14 +1,8 @@
 import './App.css'
-import { MainRoutes } from './routes/routes';
-
+import MainTemplate from './components/MainTemplate';
 
 const App = () => {
-  return (
-    <div>
-      <h1>Titulo da pagina</h1>
-      <MainRoutes />
-    </div>
-  )
+  return <MainTemplate />
 }
 
 
