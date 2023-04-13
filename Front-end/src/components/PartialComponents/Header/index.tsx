@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom'
 import { HeaderArea } from './styled'
 
-import { isLogged } from '../../../helpers/authHandler'
+import { isLogged } from '../../../helpers/AuthHandler'
 
 const Header = () => {
 
