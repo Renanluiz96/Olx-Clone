@@ -5,7 +5,7 @@ const OlxApi = {
     login: async () => {
         // Fazer consulta ao webservice
 
-        return {} //Faz a consulta e retorna um objeto que seria um json.
+        return {error: "Funcionalidade Imcompleta"} //Faz a consulta e retorna um objeto que seria um json.
     }
 }
 

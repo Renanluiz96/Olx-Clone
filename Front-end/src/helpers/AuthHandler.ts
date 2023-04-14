@@ -14,6 +14,10 @@ export const isLogged = () => {
 export const doLogin = (token: any, rememberPassword = false) => {
     //Se tiver que mandar um cookie que não inspira assim que o usuario fechar a pagina
     if(rememberPassword) {
+        //Seta o cookie por 999 dias 
         Cookies.set('token', token, {expires: 999})
+    }else {
+        //Aqui caso ele não setar por 999 dias, o cookie ira sumir na hora que o usuario fecha o navegador.
+        Cookies.set('token', token);
     }
 }
