@@ -8,3 +8,12 @@ export const isLogged = () => {
     let token = Cookies.get('token');
     return (token) ? true : false;
 }
+
+//Fazer o login
+
+export const doLogin = (token: any, rememberPassword = false) => {
+    //Se tiver que mandar um cookie que não inspira assim que o usuario fechar a pagina
+    if(rememberPassword) {
+        Cookies.set('token', token, {expires: 999})
+    }
+}
